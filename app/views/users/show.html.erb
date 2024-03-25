@@ -13,6 +13,11 @@
         <h3>投稿数の前日比・前週比</h3>
           <%= render 'comparison', today_book: @today_book, yesterday_book: @yesterday_book, this_week_book: @this_week_book, last_week_book: @last_week_book %>
       </div>
+      <div class="table_width">
+        <h3>７日分の投稿数</h3>
+        <%= render 'week', books: @books %>
+        <%= render 'graph', books: @books %>
+      </div>
     </div>
   </div>
 </div>
